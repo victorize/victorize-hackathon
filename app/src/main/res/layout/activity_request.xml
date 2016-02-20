@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.noirdev.austin.the3dease.RequestActivity"
+    android:id="@+id/fdfgd">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listView" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/myFAB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_anchorGravity="bottom|right|end"
+            android:layout_gravity="right|bottom"
+            android:clickable="true"
+            style="@style/Widget.Design.FloatingActionButton"
+            android:layout_alignParentStart="true"
+            android:src="@android:drawable/ic_input_add" />
+    </LinearLayout>
+
+</RelativeLayout>

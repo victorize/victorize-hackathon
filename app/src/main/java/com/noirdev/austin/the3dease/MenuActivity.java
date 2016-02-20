@@ -1,5 +1,6 @@
 package com.noirdev.austin.the3dease;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -10,6 +11,8 @@ import android.widget.Button;
 public class MenuActivity extends AppCompatActivity {
     Button cameraButton;
     Button galleryButton;
+    Button requestButton;
+    Button surfButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +20,8 @@ public class MenuActivity extends AppCompatActivity {
         setContentView(R.layout.activity_menu);
         cameraButton = (Button) findViewById(R.id.cameraButton);
         galleryButton = (Button) findViewById(R.id.galleryButton);
+        requestButton = (Button) findViewById(R.id.requestButton);
+        surfButton = (Button) findViewById(R.id.surfButton);
 
         cameraButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -31,6 +36,22 @@ public class MenuActivity extends AppCompatActivity {
 
             }
         });
+
+        requestButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myIntent = new Intent(MenuActivity.this,RequestActivity.class);
+                MenuActivity.this.startActivity(myIntent);
+            }
+        });
+        surfButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myIntent = new Intent(MenuActivity.this, SurfActivity.class);
+                MenuActivity.this.startActivity(myIntent);
+            }
+        });
+
     }
 
     @Override

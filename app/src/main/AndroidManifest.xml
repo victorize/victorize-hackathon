@@ -16,6 +16,34 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".RequestActivity"
+            android:label="Request For A 3d File" >
+        </activity>
+        <activity
+            android:name=".SurfActivity"
+            android:label="Search" >
+        </activity>
+        <activity
+            android:name=".UnresolvedActivity"
+            android:label="Unresolved cases" >
+        </activity>
+        <activity
+            android:name=".StoreActivity"
+            android:label="Store" >
+        </activity>
+        <activity
+            android:name=".PopularActivity"
+            android:label="Popular 3d Model" >
+        </activity>
+        <activity
+            android:name=".NewActivity"
+            android:label="@string/title_activity_new" >
+        </activity>
+        <activity
+            android:name=".UploadActivity"
+            android:label="@string/title_activity_upload" >
+        </activity>
     </application>
 
 </manifest>
